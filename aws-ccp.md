@@ -571,3 +571,19 @@ Going Hybrid!
   - Client VPN: connection a client (laptop/desktop) to your AWS network
 - **Storage Gateway** A hybrid storage service that enables your on-premises applications to use AWS cloud storage. You can use this for backup and archiving, disaster recovery, cloud data processing, storage tiering and migration.
 - **Active Directory** The AWS Directory Service for Microsoft Active Directory aslso known as AWS Managed Microsoft AD - enables your directory-aware workloads and AWS resources to use managed Active Directory in the AWS Cloud
+
+#### Logging Services
+
+- **CloudTrail** - logs *API calls (SDK, CLI) between *AWS services\* (who can we blame)
+  Who created this bucket, who spun up that expensibe EC2 instance, who launched this SageMaker Notebook?
+
+  - Detect developer misconfiguration
+  - Detect malicious actors
+  - Automate responses
+
+- **CloudWatch** - is a collection of multiple services
+  - CloudWatch **Logs** - Performance data about AWS services eg. CPU Utilization, Memory, Network in application logs, Lambda logs
+  - CloudWatch **Metrics** - Represents a time-ordered set of data points. A variable to monitor
+  - CloudWatch **Events** - trigger an event based on a condition eg. every hour take a snapshot of server
+  - CloudWatch **Alarms** - trigger notifications based on metrics
+  - CloudWatch **DashBoard** - create visuazations based on metrics
