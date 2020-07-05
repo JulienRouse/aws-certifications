@@ -524,10 +524,27 @@ The allocation or creation of resources and services to a customer
 
 #### Computing Services
 
-- **EC2** Elastic Compute Cloud, highly configurable server eg. CPU, Memory, Network, OS
-- **ECS** Elastic Container Service _Docker as a Service_, highly scalable, high performance container orchestration service that supports Docker containers, pay for EC2 instances
-- **Fargate** Microservices where you don't think about the infrastructure. Pay per task.
+- **EC2 - Elastic Compute Cloud**, highly configurable server eg. CPU, Memory, Network, OS.
+  _every computing services run on EC2 under the hood_
+- **ECS - Elastic Container Service** _Docker as a Service_, highly scalable, high performance container orchestration service that supports Docker containers, pay for EC2 instances
+- [**Fargate**](https://aws.amazon.com/fargate/) Microservices where you don't think about the infrastructure. Pay per task.
 - **EKS** _Kubernetes as a Service_ easy to deploy, manage and scale containerized applications using Kubernetes
 - **Lambda** _serverless functions_ run code without provisioning or managing servers. You pay onlyl for the compute time you consume.
 - **Elastic Beanstalk** orchestrate various AWS services, including EC2, S3, Simple Notification Service (SNS), CloudWatch, autoscaling, and Elastic Load Balancers
+  _more for dev environment than for prod_
 - **AWS Batch** plans, schedules and executes your batch computing workloads across the full range of AWS compute services and features, such as _EC2_ and _Spot instances_
+
+#### Storage
+
+- **S3 - Simple Storage Service** - _object_ storage
+- **S3 Glacier** low cost storage for _archiving and long-term backup_
+- **Storage Gateway** - Hybrid cloud storage with local caching
+  - File Gateway
+  - Volume Gateway
+  - Tape Gateway
+- **EBS - Elastic Block Storage** - hard drive in the cloud you attach to EC2 instances
+  - SSD, IOPS SSD, Throughput HHD, Cold HHD
+- **EFS - Elastic File Storage** - file storage mountable to multiple EC2 instances at the same time
+- **Snowball** - physically migrate lots of data via a computer suitcase 50-80TB
+  - **Snowball Edge** A better version of Snowball - 100TB
+  - **Snowmobile** Shipping container, pulled by a semi-trailer truck- 100 PB
