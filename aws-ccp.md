@@ -178,21 +178,6 @@ Customers can architect secure cloud solutions that comply with:
 - Export Administration REgulatioins (EAR)
 - Deparment of Defense (DoD) Cloud Computing Security Requirement Guide
 
-#### [Shared Responsibility Model](https://aws.amazon.com/compliance/shared-responsibility-model/)
-
-Having the right idea about what you are in charge of configuring/protecting, and what is AWS's responsability.
-
-Basically, AWS is responsible for the infrastructure (how to setup the regions, AZs, Edge locations, datacenter, hardware) and also to tune/maintain the software for the compute, storage, database and networking.
-
-You are in charge:
-
-- server-side encryption (file system and/or data)
-- client-side data encryption & data integrity, authentication
-- networking traffic protection (encryption, integrity, identity)
-- operating system, network and firewall configuration
-- platform, applications identity & access management
-- customer data
-
 ### Hands on lab
 
 #### IAM
@@ -587,3 +572,58 @@ Going Hybrid!
   - CloudWatch **Events** - trigger an event based on a condition eg. every hour take a snapshot of server
   - CloudWatch **Alarms** - trigger notifications based on metrics
   - CloudWatch **DashBoard** - create visuazations based on metrics
+
+#### Know your initialisms
+
+- _IAM_ Identity and Access Management
+- _S3_ Simple Storage Service
+- [_SWF_](https://aws.amazon.com/swf/) Simple Workflow Service
+- _SNS_ Simple Notification Service
+- _SQS_ Simple Queue Service
+- _SES_ Simple Email Service
+- _SSM_ Simple System Manager
+- _RDS_ Relational Database Service
+- _VPC_ Virtual Private Cloud
+- _VPN_ Virtual Private Network
+- _CFN_ CloudFormation
+- _WAF_ Web Application Firewall
+- _MQ_ Amazon ActiveMQ
+- _ASG_ Auto Scaling Groups
+- _TAM_ Technical Account Manager
+- _ELB_ Elastic Load Balancer
+- _ALB_ Application Load Balancer
+- _NLB_ Network Load Balancer
+- _EC2_ Elastic Cloud Compute
+- _ECS_ Elastic Container Service
+- _ECR_ Elastic Container Repository
+- _EBS_ Elastic Block Storage
+- _EFS_ Elastic File Storage
+- _EMR_ Elastic MapReduce
+- _EB_ Elastic Beanstalk
+- _ES_ Elasticsearch
+- _EKS_ Elastic Kubernetes Service
+- _MKS_ Managed Kafka Service
+- _IoT_ Internet of Things
+- _RI_ Reserved Instances
+
+### Security
+
+#### [Shared Responsibility Model](https://aws.amazon.com/compliance/shared-responsibility-model/)
+
+Having the right idea about what you are in charge of configuring/protecting, and what is AWS's responsability.
+
+Basically, AWS is responsible for the infrastructure (how to setup the regions, AZs, Edge locations, datacenter, hardware) and also to tune/maintain the software for the compute, storage, database and networking.
+
+You are in charge:
+
+- server-side encryption (file system and/or data)
+- client-side data encryption & data integrity, authentication
+- networking traffic protection (encryption, integrity, identity)
+- operating system, network and firewall configuration
+- platform, applications identity & access management
+- customer data
+
+_Another way of putting it_:
+
+Customer is responsible for security **IN** the cloud. (data, configuration)
+AWS is responsible for security **OF** the cloud. (hardware, operation of managed services, global infrastructure)
