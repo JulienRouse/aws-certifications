@@ -476,3 +476,58 @@ Place the reports into an **S3**
 Can use **Athena** to transform the report into a queryable database
 
 Use **QuickSight** to visualize your billing data as graphs
+
+#### [AWS Organizations and accounts](https://aws.amazon.com/organizations/)
+
+When you first create an account with AWS, your account is the **Root user**. It's single sign-in identity that has complete access to all AWS services and resources in an account. Each account has a Root Account User.
+
+You can promote your root account to become an **Organizations**, allowing you to centrally manage billing, control access, compliance, security and share resources across your AWS accounts.
+
+**Organization Units** are a group of AWS accounts within an organization which can also contain other organizational units - creating hierarchy.
+
+**Service Control Policies** give central control over the allowed permissions for all accounts in your organization, helping to ensure your accounts stay within your organization's guidelines.
+
+### Technology overview
+
+#### [AWS Networking](https://aws.amazon.com/solutionspace/networking/)
+
+- **Region** the geographical location of your network
+- **AZ** the data center of your AWS resources
+- **VPC** a logically isolated section of the AWS Cloud where you can launch AWS resources
+- **Internet Gateway** Enable access to the Internet
+- **Route Tables** determine where network traffic from your subnets are directed
+- **NACLs** acts as a firewalls at the subnet level
+- **Security Groups** acts as a firewall at the instance level
+- **Subnets** A logical partition of an IP network into multiple, smaller networks segments
+
+#### [Database services](https://aws.amazon.com/products/databases/)
+
+- **DynamoDB** NoSQL _key/value_ database (think Cassandra)
+- **DocumentDB** NoSQL _document_ database that is MongoDB compatible
+- **RDS** - _Relational_ Database Service that supports multiple engines
+  - Engines: MySQL, Postgres, MariaDB, Oracle, Microsoft SQL Server, Aurora
+  - Aurora MySQL (5x faster) and PSQL (3x faster) database _fully managed_
+  - Aurora serverless - only runs when you need it, like AWS lambda
+- **Neptune** - Managed _graph_ database
+- **Redshift** - _Columnar_ database, _petabyte_ warehouse
+- **ElastiCache** - _Redis_ or _MemCached_ database
+
+#### Provisioning Services
+
+The allocation or creation of resources and services to a customer
+
+- **Elastic Beanstalk** - service for deploying and scaling web applications and services developed with Java, .Net, PHP, Node.js, Python, Ruby, Go, and Docker. (like Heroku)
+- **OpsWorks** - configuration management service that provides managed instances of _Chef_ and _Puppet_
+- **CloudFormation** - infrastructure as code, JSON or YAML
+- **AWS QuickStart** - pre-made packages that can launch and configure your AWS compute, network, storage, and other services required to deploy a workload on AWS.
+- **AWS Marketplace** - digital calalogue of _thousands_ of software listings from independent software vendors you can find, test, buy and deploy
+
+#### Computing Services
+
+- **EC2** Elastic Compute Cloud, highly configurable server eg. CPU, Memory, Network, OS
+- **ECS** Elastic Container Service _Docker as a Service_, highly scalable, high performance container orchestration service that supports Docker containers, pay for EC2 instances
+- **Fargate** Microservices where you don't think about the infrastructure. Pay per task.
+- **EKS** _Kubernetes as a Service_ easy to deploy, manage and scale containerized applications using Kubernetes
+- **Lambda** _serverless functions_ run code without provisioning or managing servers. You pay onlyl for the compute time you consume.
+- **Elastic Beanstalk** orchestrate various AWS services, including EC2, S3, Simple Notification Service (SNS), CloudWatch, autoscaling, and Elastic Load Balancers
+- **AWS Batch** plans, schedules and executes your batch computing workloads across the full range of AWS compute services and features, such as _EC2_ and _Spot instances_
