@@ -638,3 +638,9 @@ Two important:
 - _PCI DSS_ Payment Card Industry Data Security Standard - When you want to sell things online and you need to handle credit card information
 
 Full list: https://aws.amazon.com/compliance/programs/
+
+#### AWS Artifact
+
+_How do we prove AWS meets a compliance?_
+
+No cost, serlf-service portal for on-demand access to AWS comliance reports.
