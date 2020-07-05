@@ -627,3 +627,14 @@ _Another way of putting it_:
 
 Customer is responsible for security **IN** the cloud. (data, configuration)
 AWS is responsible for security **OF** the cloud. (hardware, operation of managed services, global infrastructure)
+
+#### [AWS Compliance Programs](https://aws.amazon.com/compliance/programs/)
+
+A set of internal policies and procedures of a company to comply with laws, rules and regulations or to uphold business reputation.
+
+Two important:
+
+- _HIPAA_ Health Insurance Portability and Accountability Act - in the US, to work with medical information
+- _PCI DSS_ Payment Card Industry Data Security Standard - When you want to sell things online and you need to handle credit card information
+
+Full list: https://aws.amazon.com/compliance/programs/
