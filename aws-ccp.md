@@ -644,3 +644,20 @@ Full list: https://aws.amazon.com/compliance/programs/
 _How do we prove AWS meets a compliance?_
 
 No cost, serlf-service portal for on-demand access to AWS comliance reports.
+
+#### Amazon Inspector
+
+\*How do we prove an EC2 Instance is harden?
+
+Hardening is the act of eliminating as many **security** risks as possible.
+
+AWS Inspector runs a **security benchmark** against specific EC2 instances.
+You can run a variety of security benchmarks.
+
+Can perform both **Network** and **Host** assessments.
+
+1. install the AWS agent on your EC2 instances
+2. run an assessment for you assessment target
+3. review your findings and remediate security issues
+
+One very popular benchmark you can run is by CIS which as _699 checks_
