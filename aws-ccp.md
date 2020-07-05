@@ -548,3 +548,14 @@ The allocation or creation of resources and services to a customer
 - **Snowball** - physically migrate lots of data via a computer suitcase 50-80TB
   - **Snowball Edge** A better version of Snowball - 100TB
   - **Snowmobile** Shipping container, pulled by a semi-trailer truck- 100 PB
+
+#### Business Centric Services
+
+- **Amazon Connect** - _Call Center_ - Cloud-based call center service you can setup in just a few clicks - based on the same proven system used by the Amazon customer service teams.
+- **WorkSpaces** - _Virtual Remote Desktop_ - Secure managed service for provisioning either Windows or Linux desktops in just a few minutes which quickly scales up to thousands of desktops
+- **WorkDocks** - A content creation and collaboration service -easily create, edit, and share content saved centrally in AWS. (_AWS version of Sharepoint_)
+- **Chime** - AWS Plarform for _online meeting, video conferencing_, and business calling which elastically scales to meet your capacity needs.
+- **WorkMail** - Managed _business email_, contacts, and calendar service with support for existing desktop and mobile email client applications. (IMAP)
+- **Pinpoint** - Marketing campaign management system you can _use for sending targeted email_, SMS, push notifications, and voice messages
+- **SES - Simple Email Service** - A cloud-based email sending service designed for marketers and applications developers to _send marketing, notification, and emails_
+- **QuickSight** - A business intelligence (BI) service. Connect multiple datasource and quickly visualize data in the form of graphs with little to no programming knowledge
