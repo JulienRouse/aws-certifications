@@ -559,3 +559,15 @@ The allocation or creation of resources and services to a customer
 - **Pinpoint** - Marketing campaign management system you can _use for sending targeted email_, SMS, push notifications, and voice messages
 - **SES - Simple Email Service** - A cloud-based email sending service designed for marketers and applications developers to _send marketing, notification, and emails_
 - **QuickSight** - A business intelligence (BI) service. Connect multiple datasource and quickly visualize data in the form of graphs with little to no programming knowledge
+
+#### Enterprise Integration
+
+Going Hybrid!
+
+- [**Direct Connect**](https://aws.amazon.com/directconnect/?nc=sn&loc=0) dedicated Gigabit network connection from your premises to AWS.
+  Imagine having a direct fibre optic cable running straight to AWS
+- **VPN** establish a _secure_ connection to your AWS network
+  - Site-to-Site VPN: connection your on-premise to your AWS network
+  - Client VPN: connection a client (laptop/desktop) to your AWS network
+- **Storage Gateway** A hybrid storage service that enables your on-premises applications to use AWS cloud storage. You can use this for backup and archiving, disaster recovery, cloud data processing, storage tiering and migration.
+- **Active Directory** The AWS Directory Service for Microsoft Active Directory aslso known as AWS Managed Microsoft AD - enables your directory-aware workloads and AWS resources to use managed Active Directory in the AWS Cloud
