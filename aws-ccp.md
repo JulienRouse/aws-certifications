@@ -720,3 +720,32 @@ Available on
 - **Elastic Load Balancing**
 - **AWS Global Accelerator**
 - **Elastic IP (Amazon Elastic Compute Cloud and Network Load Balancer)**
+
+#### Penetration testing
+
+An authorized simulated cyberattack on a computer system, performed to evaluate the security of the system.
+
+_Can you perform PenTest on AWS?_ Yes!
+
+**Permitted Services**
+
+- **EC2** instances, **NAT Gateways**, and **ELB**
+- **RDS**
+- **CloudFront**
+- **Aurora**
+- **API Gateways**
+- **AWS Lambda** and **Lambd@Edge** functions
+- **Lightsail** resources
+- **Elastic Beanstalk** environments
+
+**Prohibited Activities**
+
+- DNS zone walking via **Amazon Route 53** hosted zones
+- DoS, DDoS, Simulated Dos, Simulated DDoS
+- Port flooding
+- Protocol flooding
+- Request flooding (login request flooding, API request flooding)
+
+For _other simulated events_, you will need to submit a request to AWS. A reply could take 7 days.
+
+##### GuardDuty
