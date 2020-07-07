@@ -749,3 +749,16 @@ _Can you perform PenTest on AWS?_ Yes!
 For _other simulated events_, you will need to submit a request to AWS. A reply could take 7 days.
 
 ##### GuardDuty
+
+IDS/IPS: Intrusion Detection System and Intrusion Protection System.
+A device or software application that monitors a network or systems for malicious activity or policy violations.
+
+_How do we detect if someone is attempting to gain access to our AWS account or resources?_
+
+**Guard Duty** is a _threat detection service_ that continuously monitors for malicious, suspicious activity and unauthorized behavior. It uses Machine Learning to analyse the following AWS logs:
+
+- **CloudTrail** logs
+- **VPC Flow** logs
+- DNS logs
+
+It will alert your of **Findings** which you can automate a incident response via **CloudWatch** Events or with 3rd Party Services
