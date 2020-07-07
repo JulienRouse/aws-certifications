@@ -288,19 +288,19 @@ Certain services are free themselves, but the resources they setup will cost you
 
 #### [Support Plan](https://aws.amazon.com/premiumsupport/plans/)
 
-- Basic
+- _Basic_
   Email support only
   For _billing and account_
   7 trusted advisor [checks](https://aws.amazon.com/premiumsupport/technology/trusted-advisor/best-practice-checklist/)
   \$0/month
-- Developer
+- _Developer_
   tech support via email ~24h until reply
   No third party support
   General Guidance <24h
   System impaired <12h
   7 trusted advisor [checks](https://aws.amazon.com/premiumsupport/technology/trusted-advisor/best-practice-checklist/)
   \$20/month
-- Business
+- _Business_
   Tech support via email ~24h until reply
   Tech support via Chat, Phone 24/7
   General Guidance <24h
@@ -309,7 +309,7 @@ Certain services are free themselves, but the resources they setup will cost you
   Production System Down <1h
   All trusted advisor [checks](https://aws.amazon.com/premiumsupport/technology/trusted-advisor/best-practice-checklist/)
   \$100/month
-- Business titre à vérifier
+- _Enterprise_
   Tech support via email ~24h until reply
   Tech support via Chat, Phone 24/7
   General Guidance <24h
@@ -643,11 +643,11 @@ Full list: https://aws.amazon.com/compliance/programs/
 
 _How do we prove AWS meets a compliance?_
 
-No cost, serlf-service portal for on-demand access to AWS comliance reports.
+No cost, serlf-service portal for on-demand access to AWS compliance reports.
 
 #### Amazon Inspector
 
-\*How do we prove an EC2 Instance is harden?
+_How do we prove an EC2 Instance is harden?_
 
 Hardening is the act of eliminating as many **security** risks as possible.
 
@@ -661,3 +661,23 @@ Can perform both **Network** and **Host** assessments.
 3. review your findings and remediate security issues
 
 One very popular benchmark you can run is by CIS which as _699 checks_
+
+#### AWS WAF
+
+AWS Web Application Firewall protect your web applications from common web exploits.
+Write your own rules to ALLOW or DENY traffic based on the contents of an HTTP requests.
+Use a ruleset from a trusted AWS Security Partner in the AWS WAF Rules Marketplace
+WAF can be attached to either **CloudFront** or an **Application Load Balancer**
+
+Protect web applications from attacks covered in the OWASP Top 10 most dangerous attacks:
+
+1. Injection
+2. Broken Authentication
+3. Sensitive data exposure
+4. XML External Entities (XXE)
+5. Broken Access Control
+6. Security misconfigurations
+7. Cross Site Scripting (XSS)
+8. Insecure Deserialization
+9. Using Components with known vulnerabilities
+10. Insufficient logging and monitoring
