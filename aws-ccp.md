@@ -681,3 +681,42 @@ Protect web applications from attacks covered in the OWASP Top 10 most dangerous
 8. Insecure Deserialization
 9. Using Components with known vulnerabilities
 10. Insufficient logging and monitoring
+
+#### AWS Shield
+
+AWS shield is a _managed_ DDoS protection service that safeguards applications running on AWS
+
+_What is DDoS attack?_
+Attempt to disrupt a service by flooding it with a large amount of (fake) traffic
+
+All AWS customers benefit from the automatic protections of **AWS Shield Standard**, at no additional charge
+
+When you route your traffic through **Route53** or **CloudFront**, you are using **AWS Shield Standard**
+
+Protect you against _Layer 3, 4 and 7_ attacks
+
+- 7 application - network process to application
+- 4 transport - E2E connections and reliability
+- 3 network - path determination and IP
+  (_note_ layer of the OSI model)
+
+##### [**AWS Shield Standard**](https://aws.amazon.com/shield/)
+
+- Free
+- protection against most common DDoS attacks, and acces to tools and best practices to build a DDoS resilient architecture.
+- Automatically available on all AWS services
+
+##### **AWS Shield Advanced**
+
+- 3000 USD / Year
+- Additional protection against larger and more sophisticated attacks
+- visibility into attacks
+- 24/7 access to DDoS experts for complex case
+
+Available on
+
+- **Route 53**
+- **CloudFront**
+- **Elastic Load Balancing**
+- **AWS Global Accelerator**
+- **Elastic IP (Amazon Elastic Compute Cloud and Network Load Balancer)**
