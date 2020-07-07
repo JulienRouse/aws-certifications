@@ -748,7 +748,7 @@ _Can you perform PenTest on AWS?_ Yes!
 
 For _other simulated events_, you will need to submit a request to AWS. A reply could take 7 days.
 
-##### GuardDuty
+#### GuardDuty
 
 IDS/IPS: Intrusion Detection System and Intrusion Protection System.
 A device or software application that monitors a network or systems for malicious activity or policy violations.
@@ -762,3 +762,14 @@ _How do we detect if someone is attempting to gain access to our AWS account or 
 - DNS logs
 
 It will alert your of **Findings** which you can automate a incident response via **CloudWatch** Events or with 3rd Party Services
+
+#### Key Management Service KMS
+
+A managed service that makes it easy for you to crate and control the encryption keys used to encrypt your data
+
+- **KMS** is a multi-tenant HSM (hardware security module)
+- Many AWS services are integrated to use **KMS** to encrypt your data with a simiple checkbox
+- **KMS** uses Envelope Encryption
+
+_Envelope Encryption_
+When you encrypt your data, your data is protected, but you have to protect your encryption key. When you encrypt you data key with a master key as an additional layer of security.
